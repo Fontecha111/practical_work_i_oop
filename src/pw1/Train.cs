@@ -46,7 +46,15 @@ namespace practicalwork
             return this.status;
         }
 
-        
+        public void SetStatus(Status newStatus)
+        {
+            status = newStatus;
+        }
+
+        public virtual string ShowInfo()
+        {
+            return $"Train ID: {ID}, Type: {type}, Status: {status}, Arrival Time: {arrivalTime}";
+        }
     }
 
     

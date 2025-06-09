@@ -22,5 +22,10 @@ namespace practicalwork
         {
             return this.capacity;
         }
+
+        public override string ShowInfo()
+        {
+            return $"Passenger Train ID: {ID}, Status: {status}, Arrival Time: {arrivalTime}, Carriages: {numberOfCarriages}, Capacity: {capacity}";
+        }
     }
 }
