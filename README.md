@@ -3,10 +3,10 @@ This repository is the base element for the development of Practice 1 for the ex
 
 # Cover 9404133
 # Table of contents
-- [Introduction] (#introduction)
-- [Description] (#description)
-- [Problems] (#problems)
-- [Conclusions] (#conclusions)
+- [Introduction](#introduction)
+- [Description](#description)
+- [Problems](#problems)
+- [Conclusions](#conclusions)
 
 
 # Introduction
