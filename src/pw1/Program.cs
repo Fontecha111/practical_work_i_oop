@@ -22,6 +22,9 @@ namespace practicalwork
                 switch (input)
                 {
                     case "1":
+                        Console.WriteLine("Enter the file name: ");
+                        string fileName = Console.ReadLine();
+                        station.LoadTrainsFromFile(fileName);
                         break;
 
 
