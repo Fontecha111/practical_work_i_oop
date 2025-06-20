@@ -26,22 +26,22 @@ namespace practicalwork
         }
 
 
-        public string getID()
+        public string GetID()
         {
             return this.ID;
         }
 
-        public int getArrivalTime()
+        public int GetArrivalTime()
         {
             return this.arrivalTime;
         }
 
-        public string getType()
+        public string GetType()
         {
             return this.type;
         }
 
-        public Status getStatus()
+        public Status GetStatus()
         {
             return this.status;
         }
@@ -54,6 +54,11 @@ namespace practicalwork
         public virtual string ShowInfo()
         {
             return $"Train ID: {ID}, Type: {type}, Status: {status}, Arrival Time: {arrivalTime}";
+        }
+
+        public void DecreaseArrivalTime(int minutes)
+        {
+            arrivalTime = Math.Max(0, arrivalTime - minutes);
         }
     }
 

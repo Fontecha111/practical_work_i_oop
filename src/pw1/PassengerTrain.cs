@@ -13,12 +13,12 @@ namespace practicalwork
             this.capacity = capacity;
         }
 
-        public int getNumberOfCarriages()
+        public int GetNumberOfCarriages()
         {
             return this.numberOfCarriages;
         }
 
-        public int getCapacity()
+        public int GetCapacity()
         {
             return this.capacity;
         }

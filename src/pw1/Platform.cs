@@ -65,7 +65,7 @@ namespace practicalwork
 
         public void FreePlatform()
         {
-            if (dockingTime == 0 && currentTrain != null && currentTrain.getStatus() == Status.Docked)
+            if (dockingTime == 0 && currentTrain != null && currentTrain.GetStatus() == Status.Docked)
             {
                 currentTrain = null;
                 status = PlatformStatus.Free;
@@ -80,8 +80,9 @@ namespace practicalwork
             }
             else
             {
-                return $"Platform {ID}: Occupied by the Train {currentTrain.getID()} with status: {currentTrain.getStatus()} - Remaining Ticks: {dockingTime}";
+                return $"Platform {ID}: Occupied by the Train {currentTrain.GetID()} with status: {currentTrain.GetStatus()} - Remaining Ticks: {dockingTime}";
             }
         }
+        
     }
 }

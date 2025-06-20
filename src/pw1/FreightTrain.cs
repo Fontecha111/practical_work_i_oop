@@ -13,12 +13,12 @@ namespace practicalwork
             this.freightType = freightType;
         }
 
-        public int getMaxWeight()
+        public int GetMaxWeight()
         {
             return this.maxWeight;
         }
 
-        public string getFreightType()
+        public string GetFreightType()
         {
             return this.freightType;
         }

@@ -18,7 +18,7 @@ namespace practicalwork
             }
         }
 
-        public void LoasTrainsFromFile()
+        public void LoadTrainsFromFile()
         {
 
         }
@@ -27,10 +27,30 @@ namespace practicalwork
         {
             foreach (var train in trains)
             {
-                if (train.getStatus() == Status.EnRoute)
+                if (train.GetStatus() == Status.EnRoute)
                 {
+                    train.DecreaseArrivalTime(15);
 
+                    if (train.GetArrivalTime() == 0)
+                    {
+                        Platform freePlatform = platforms.FirstOrDefault(p => p.GetStatus() == PlatformStatus.Free);
+
+                        if (freePlatform != null)
+                        {
+                            freePlatform.AssignTrain(train);
+                        }
+                        else
+                        {
+                            train.SetStatus(Status.Waiting);
+                        }
+                    }
                 }
+            }
+
+            foreach (var platform in platforms)
+            {
+                platform.AdvanceTick();
+                platform.FreePlatform();
             }
         }
 
