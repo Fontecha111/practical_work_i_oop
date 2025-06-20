@@ -68,5 +68,10 @@ namespace practicalwork
                 Console.WriteLine(platform.ShowInfo());
             }
         }
+
+        public bool AllTrainsDocked()
+        {
+            return trains.All(t => t.GetStatus() == Status.Docked);
+        }
     }
 }
