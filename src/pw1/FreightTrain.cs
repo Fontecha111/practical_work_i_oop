@@ -7,7 +7,7 @@ namespace practicalwork
         private int maxWeight;
         private string freightType;
 
-        public FreightTrain(string ID, int arrivalTime, string type, int maxWeight, string freightType) : base(ID, arrivalTime, type)
+        public FreightTrain(string ID, int arrivalTime, int maxWeight, string freightType) : base(ID, arrivalTime, "freight")
         {
             this.maxWeight = maxWeight;
             this.freightType = freightType;

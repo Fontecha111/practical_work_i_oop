@@ -7,7 +7,7 @@ namespace practicalwork
         private int numberOfCarriages;
         private int capacity;
 
-        public PassengerTrain(string ID, int arrivalTime, string type, int numberOfCarriages, int capacity) : base(ID, arrivalTime, type)
+        public PassengerTrain(string ID, int arrivalTime, int numberOfCarriages, int capacity) : base(ID, arrivalTime, "passenger")
         {
             this.numberOfCarriages = numberOfCarriages;
             this.capacity = capacity;

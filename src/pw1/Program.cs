@@ -16,18 +16,18 @@ namespace practicalwork
                 Console.WriteLine("1. Load trains from an existing file");
                 Console.WriteLine("2. Start simulation");
                 Console.WriteLine("3. Exit");
-                                                                                                           
+
                 string input = Console.ReadLine();
 
                 switch (input)
                 {
                     case "1":
                         break;
-                            
+
 
                     case "2":
                         Console.WriteLine("Starting simulation...");
-                        while (!station.AllTrainsDocked());
+                        while (!station.AllTrainsDocked()) ;
                         {
                             station.AdvanceTick();
                             station.DisplayStatus();
