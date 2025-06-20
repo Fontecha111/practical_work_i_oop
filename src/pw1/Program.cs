@@ -6,7 +6,7 @@ namespace practicalwork
     {
         public static void Main()
         {
-            Station station = new Station(3);
+            Station station = new Station(6);
             bool exit = false;
 
             while (!exit)
@@ -30,11 +30,11 @@ namespace practicalwork
 
                     case "2":
                         Console.WriteLine("Starting simulation...");
-                        while (!station.AllTrainsDocked()) ;
+                        while (!station.AllTrainsDocked()) 
                         {
                             station.AdvanceTick();
                             station.DisplayStatus();
-                            Thread.Sleep(1000);
+                            Thread.Sleep(2500);
                         }
                         Console.WriteLine("All the trains are docked. Simulation is finished");
                         break;

@@ -40,6 +40,15 @@ namespace practicalwork
                         }
                     }
                 }
+                else if (train.GetStatus() == Status.Waiting)
+                {
+                    Platform freePlatform = platforms.FirstOrDefault(p => p.GetStatus() == PlatformStatus.Free);
+
+                    if (freePlatform != null)
+                    {
+                        freePlatform.AssignTrain(train);
+                    }
+                }
             }
 
             foreach (var platform in platforms)
