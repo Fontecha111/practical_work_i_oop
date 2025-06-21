@@ -76,7 +76,7 @@ namespace practicalwork
         public bool AllTrainsDocked()
         {
             return trains.All(t => t.GetStatus() == Status.Docked);
-        }
+        }   
 
         public void LoadTrainsFromFile(string filePath)
         {
