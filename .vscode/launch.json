@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Train Station Project",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/pw1/bin/Debug/net8.0/pw1.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/pw1",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -129,6 +129,7 @@ To add, when the simulation started, the updates of it where really fast and you
 Moreover, I did not have an actual visual feedback of the updates of the program as it was not running well at first.
 As well, I had some problems cloning the base repository to start creating the project.
 
+Finally, THE MOST IMPORTANT PROBLEM I had was in the final of the project because, before doing the README the program would compile correctly, but, after finishing the project I tried to ran it for the last time and it could not compile and this alert showed up "No C# project is currently loaded. Please create a C# project in order to debug". However, if the project is opened directly in the pw1 folder, the program will run correctly. For that reason, I did some research in order to see what the problem was and I found that I should add a .vscode folder in order to run the program from the practical_work_i_oop.
 
 # Conclusions
 After doing this practical work I have reached some conclusions.
